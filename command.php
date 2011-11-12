@@ -1,5 +1,5 @@
 <?php
-echo $_GET['command'];
+
 if ($_GET['command']=="back")
 {
 system("back");
@@ -15,6 +15,10 @@ system("turnLeft");
 elseif ($_GET['command']=="turnRight")
 {
 system("turnRight");
+}
+elseif ($_GET['command']=="verify")
+{
+echo('im a robot');
 }
 else
 {
