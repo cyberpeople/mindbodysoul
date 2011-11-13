@@ -22,6 +22,9 @@ switch ($_GET['command']) {
 	case "VERIFY":
 		echo "VERIFIED\r\n<br>I'm a robot!";
 		break;
+	case "CHECK":
+		system("echo 'hello world' > log.txt");
+		break;
 	default:
 		echo "Command invalid. Go away.";
 		break;
