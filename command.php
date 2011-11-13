@@ -1,27 +1,28 @@
 <?php
 
-if ($_GET['command']=="back")
-{
-system("back");
+$dir = "./roomba/";
+
+switch ($_GET['command']) {
+	case "FORWARD":
+		echo "FORWARD";
+		system($dir."forward");
+		break;
+	case "BACK":
+		echo "BACK";
+		system($dir."back");
+		break;
+	case "LEFT":
+		echo "LEFT";
+		system($dir."turnLeft");
+		break;
+	case "RIGHT":
+		echo "RIGHT";
+		system($dir."turnRight");
+		break;
+	case "VERIFY":
+		echo "VERIFIED\r\n<br>I'm a robot!";
+		break;
+	default:
+		echo "Command invalid. Go away.";
+		break;
 }
-elseif ($_GET['command']=="forward")
-{
-system("forward");
-}
-elseif ($_GET['command']=="turnLeft")
-{
-system("turnLeft");
-}
-elseif ($_GET['command']=="turnRight")
-{
-system("turnRight");
-}
-elseif ($_GET['command']=="verify")
-{
-echo('im a robot');
-}
-else
-{
-echo('invalid command');
-}
-?>
