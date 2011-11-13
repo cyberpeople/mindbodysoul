@@ -13,11 +13,11 @@ switch ($_GET['command']) {
 		break;
 	case "LEFT":
 		echo "LEFT";
-		system($dir."turnLeft");
+		system($dir."left");
 		break;
 	case "RIGHT":
 		echo "RIGHT";
-		system($dir."turnRight");
+		system($dir."right");
 		break;
 	case "VERIFY":
 		echo "VERIFIED\r\n<br>I'm a robot!";
