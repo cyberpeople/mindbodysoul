@@ -12,12 +12,14 @@ switch ($command) {
 		system($dir."back");
 		break;
 	case "LEFT":
-		system($dir."left45");
+		system($dir."left");
+		break;
 	case "LEFT45":
 		system($dir."left45");
 		break;
 	case "RIGHT":
-		system($dir."right45");
+		system($dir."right");
+		break;
 	case "RIGHT45":
 		system($dir."right45");
 		break;
