@@ -1,23 +1,25 @@
 <?php
 
 $dir = "./roomba/";
+$command = $_GET['command'];
+echo $command . "\r\n<br>";
 
-switch ($_GET['command']) {
+switch ($command) {
 	case "FORWARD":
-		echo "FORWARD";
 		system($dir."forward");
 		break;
 	case "BACK":
-		echo "BACK";
 		system($dir."back");
 		break;
 	case "LEFT":
-		echo "LEFT";
-		system($dir."left");
+		system($dir."left45");
+	case "LEFT45":
+		system($dir."left45");
 		break;
 	case "RIGHT":
-		echo "RIGHT";
-		system($dir."right");
+		system($dir."right45");
+	case "RIGHT45":
+		system($dir."right45");
 		break;
 	case "VERIFY":
 		echo "VERIFIED\r\n<br>I'm a robot!";
