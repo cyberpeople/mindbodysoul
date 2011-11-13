@@ -2,7 +2,6 @@
 
 $dir = "./roomba/";
 $command = $_GET['command'];
-echo $command . "\r\n<br>";
 
 switch ($command) {
 	case "FORWARD":
