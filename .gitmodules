@@ -1,3 +1,6 @@
 [submodule "soul"]
 	path = soul
 	url = git@github.com:cyberpeople/soul.git
+[submodule "mind"]
+	path = mind
+	url = git@github.com:cyberpeople/mind.git
