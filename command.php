@@ -19,6 +19,9 @@ switch ($_GET['command']) {
 	case "RIGHT45":
 		system($dir."right45");
 		break;
+	case "STOP":
+		system($dir."stop");
+		break;
 	case "VERIFY":
 		echo "VERIFIED\r\n<br>I'm a robot!";
 		break;
