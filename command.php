@@ -1,10 +1,6 @@
 <?php
-
 $dir = "./roomba/";
-$command = $_GET['command'];
-echo $command . "\r\n<br>";
-
-switch ($command) {
+switch ($_GET['command']) {
 	case "FORWARD":
 		system($dir."forward");
 		break;
