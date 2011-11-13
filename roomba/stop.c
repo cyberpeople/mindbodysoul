@@ -10,6 +10,7 @@ void main()
 	int num_of_commands3=2;
 	int num_of_commands4=5;	
 
+	int fd;
 	for(int i=0;i<num_of_commands3;i++)
 	{
 		uart_tx(fd,commands3[i]);
