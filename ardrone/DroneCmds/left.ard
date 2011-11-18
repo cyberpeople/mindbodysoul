@@ -1,0 +1,9 @@
+takeoff
+wait 4
+yaw -0.5
+gaz .2
+wait 1
+pitch -.3
+gaz .2
+wait 1 
+pitch 0

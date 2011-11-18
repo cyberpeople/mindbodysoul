@@ -1,0 +1,6 @@
+takeoff
+wait 4
+pitch -.3
+gaz .2
+wait 1 
+pitch 0
